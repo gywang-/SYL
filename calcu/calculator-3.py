@@ -48,11 +48,10 @@ class calc_course(object):
             elif value >JSH:
                 social_sum = format(JSH * social_tax,'.2f')
                 self.calc_salary(key,social_sum)
-            line = str(str(key)+','+format(value,'.2f')+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f'))
+            line = str(str(key)+','+str(value)+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f'))
             #print(line)
             with open(wage_files,'a+') as file:
                 file.write(line + "\r\n")
-                #salary_data = [str(key)+','+format(value,'.2f')+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f')]
                 
             print(str(key)+','+format(value,'.2f')+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f'))
     def calc_salary(self,key,social_sum):
