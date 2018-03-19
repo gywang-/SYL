@@ -53,7 +53,7 @@ class calc_course(object):
             with open(wage_files,'a+') as file:
                 file.write(line + "\r\n")
                 
-            print(str(key)+','+format(value,'.2f')+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f'))
+            print(str(key)+','+str(value)+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f'))
     def calc_salary(self,key,social_sum):
         # 个税金额
            global tax
@@ -88,19 +88,19 @@ class calc_course(object):
     
 if __name__ == '__main__':
     args = sys.argv[1:]
-#try:
-    social_index = args[int(args.index('-c')) + 1]
-    deployee_index = args[int(args.index('-d')) + 1]
-    wage_index = args[int(args.index('-o')) + 1]
-    config_info(social_index,deployee_index,wage_index)
-    calc_course(deployee,JSL,JSH,social_tax)
-#except:
-#    print("请输入正确的参数:")
-#    print("python3 calculator.py [option] [parameter]" )
-#    print("option:")
-#    print("-c 指定社保比例配置文件名及目录")
-#    print("-d 指定员工工资数据文件")
-#    print("-o 指定计算后数据的输出目录及文件名")
-#    print("例子:")
-#    print("python3 calculator.py -c ./test.cfg -d ./user.csv -o /tmp/gongzi.csv")
-#    sys.exit(-1)
+try:
+   social_index = args[int(args.index('-c')) + 1]
+   deployee_index = args[int(args.index('-d')) + 1]
+   wage_index = args[int(args.index('-o')) + 1]
+   config_info(social_index,deployee_index,wage_index)
+   calc_course(deployee,JSL,JSH,social_tax)
+except:
+    print("请输入正确的参数:")
+    print("python3 calculator.py [option] [parameter]" )
+    print("option:")
+    print("-c 指定社保比例配置文件名及目录")
+    print("-d 指定员工工资数据文件")
+    print("-o 指定计算后数据的输出目录及文件名")
+    print("例子:")
+    print("python3 calculator.py -c ./test.cfg -d ./user.csv -o /tmp/gongzi.csv")
+    sys.exit(-1)
