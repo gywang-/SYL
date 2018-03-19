@@ -3,6 +3,7 @@ import sys
 import json
 
 # read config info
+point = int(3500)
 
 class config_info(object):
     def __init__(self,social_file,deployee_file,wage_file):
@@ -15,6 +16,7 @@ class config_info(object):
         global JSL
         global JSH
         global deployee
+        global tax
         # 将社保配置文件读取并存储到dict中
         with open(social_file,'r') as socials:
             social = {}
@@ -32,17 +34,54 @@ class config_info(object):
         JSL = float(social['JiShuL'])
         JSH = float(social['JiShuH'])
         print(deployee)
+        print(type(deployee))
     # 工资计算过程
 class calc_course(object):
     def __init__(self,deployee,JSL,JSH,social_tax):
     # 社保应缴纳金额
-        if wage <= JSL:
-            social_sum = format (JSL * social_tax,'.2f')
-        elif wage > JSL and wage < JSH:
-            social_sum = format(wage * social_tax,'.2f')
-        else:
-            social_sum = format(JSH * social_tax,'.2f')
-        print(social_sum)
+        for key,value in deployee.items():
+            if value <= JSL:
+                socail_sum = format (JSL * social_tax,'.2f')
+                self.calc_salary(key,social_sum)
+            elif value > JSL and value <= JSH:
+                social_sum = format(value * social_tax,'.2f')
+                self.calc_salary(key,social_sum)
+            elif value >JSH:
+                social_sum = format(JSH * social_tax,'.2f')
+                self.calc_salary(key,social_sum)
+            print(key,value,social_sum,tax,salary)
+    def calc_salary(self,key,social_sum):
+        # 个税金额
+           tax_rate = float(deployee[key]) - float(social_sum) - float(point)
+           if tax_rate < 0:
+               tax = float(0)
+               salary = int(deployee[key]) - tax - float(social_sum)
+           elif tax_rate <= 1500:
+               tax = float(format(float(tax_rate * 0.03 - 0),'.2f'))
+               salary = int(deployee[key]) - tax - float(social_sum)
+               print(tax)
+           elif tax_rate > 1500 and tax_rate <= 4500:
+               tax = float(format(float(tax_rate * 0.10 - 105),'.2f'))
+               salary = int(deployee[key]) - tax - float(social_sum)
+               print(tax)
+           elif tax_rate > 4500 and tax_rate <= 9000:
+               tax = float(format(float(tax_rate * 0.20 - 555),'.2f'))
+               salary = int(deployee[key]) - tax - float(social_sum)
+               print(tax)
+           elif tax_rate > 9000 and tax_rate <= 35000:
+               tax = float(format(float(tax_rate * 0.25 - 1005),'.2f'))
+               salary = int(deployee[key]) - tax - float(social_sum)
+               print(tax)
+           elif tax_rate > 35000 and tax_rate <= 55000:
+               tax = float(format(float(tax_rate * 0.30 - 2755),'.2f'))
+               salary = int(deployee[key]) - tax - float(social_sum)
+           elif tax_rate > 55000 and tax_rate <= 80000:
+               tax = float(format(float(tax_rate * 0.35 - 5505),'.2f'))
+               salary = int(deployee[key]) - tax - float(social_sum)
+           elif tax_rate > 80000:
+               tax = float(format(float(tax_rate * 0.45 - 13505),'.2f'))
+               salary = int(deployee[key]) - tax - float(social_sum)
+            
 
     
 if __name__ == '__main__':
@@ -52,7 +91,7 @@ if __name__ == '__main__':
     deployee_index = args[int(args.index('-d')) + 1]
     wage_index = args[int(args.index('-o')) + 1]
     config_info(social_index,deployee_index,wage_index)
-#    config_info.calc_course(wage,JSL,JSH,social_tax)
+    calc_course(deployee,JSL,JSH,social_tax)
 #except:
 #    print("请输入正确的参数:")
 #    print("python3 calculator.py [option] [parameter]" )
