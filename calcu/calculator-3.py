@@ -16,8 +16,9 @@ class config_info(object):
         global JSL
         global JSH
         global deployee
-        global tax
+        global wage_files
         # 将社保配置文件读取并存储到dict中
+        wage_files = wage_file
         with open(social_file,'r') as socials:
             social = {}
             for i in socials.readlines():
@@ -33,8 +34,6 @@ class config_info(object):
         social_tax = float(social['YangLao']) + float(social['YiLiao']) + float(social['ShiYe']) + float(social['GongShang']) + float(social['ShengYu']) + float(social['GongJiJin'])
         JSL = float(social['JiShuL'])
         JSH = float(social['JiShuH'])
-        print(deployee)
-        print(type(deployee))
     # 工资计算过程
 class calc_course(object):
     def __init__(self,deployee,JSL,JSH,social_tax):
@@ -49,37 +48,41 @@ class calc_course(object):
             elif value >JSH:
                 social_sum = format(JSH * social_tax,'.2f')
                 self.calc_salary(key,social_sum)
-            print(key,value,social_sum,tax,salary)
+            line = str(str(key)+','+format(value,'.2f')+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f'))
+            #print(line)
+            with open(wage_files,'a+') as file:
+                file.write(line + "\r\n")
+                #salary_data = [str(key)+','+format(value,'.2f')+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f')]
+                
+            print(str(key)+','+format(value,'.2f')+','+str(social_sum)+','+format(tax,'.2f')+','+format(salary,'.2f'))
     def calc_salary(self,key,social_sum):
         # 个税金额
+           global tax
+           global salary
            tax_rate = float(deployee[key]) - float(social_sum) - float(point)
            if tax_rate < 0:
                tax = float(0)
                salary = int(deployee[key]) - tax - float(social_sum)
            elif tax_rate <= 1500:
-               tax = float(format(float(tax_rate * 0.03 - 0),'.2f'))
+               tax = float(format(float(tax_rate * 0.03 - 0)))
                salary = int(deployee[key]) - tax - float(social_sum)
-               print(tax)
            elif tax_rate > 1500 and tax_rate <= 4500:
-               tax = float(format(float(tax_rate * 0.10 - 105),'.2f'))
+               tax = float(format(float(tax_rate * 0.10 - 105)))
                salary = int(deployee[key]) - tax - float(social_sum)
-               print(tax)
            elif tax_rate > 4500 and tax_rate <= 9000:
-               tax = float(format(float(tax_rate * 0.20 - 555),'.2f'))
+               tax = float(format(float(tax_rate * 0.20 - 555)))
                salary = int(deployee[key]) - tax - float(social_sum)
-               print(tax)
            elif tax_rate > 9000 and tax_rate <= 35000:
-               tax = float(format(float(tax_rate * 0.25 - 1005),'.2f'))
+               tax = float(format(float(tax_rate * 0.25 - 1005)))
                salary = int(deployee[key]) - tax - float(social_sum)
-               print(tax)
            elif tax_rate > 35000 and tax_rate <= 55000:
-               tax = float(format(float(tax_rate * 0.30 - 2755),'.2f'))
+               tax = float(format(float(tax_rate * 0.30 - 2755)))
                salary = int(deployee[key]) - tax - float(social_sum)
            elif tax_rate > 55000 and tax_rate <= 80000:
-               tax = float(format(float(tax_rate * 0.35 - 5505),'.2f'))
+               tax = float(format(float(tax_rate * 0.35 - 5505)))
                salary = int(deployee[key]) - tax - float(social_sum)
            elif tax_rate > 80000:
-               tax = float(format(float(tax_rate * 0.45 - 13505),'.2f'))
+               tax = float(format(float(tax_rate * 0.45 - 13505)))
                salary = int(deployee[key]) - tax - float(social_sum)
             
 
