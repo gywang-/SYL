@@ -3,4 +3,4 @@
 export FLASK_DEBUG=1 
 export FLASK_APP=app.py
 
-flask run >flask.log 2>&1 &
+flask run --port 3000 >flask.log 2>&1 &
