@@ -1,240 +1,8 @@
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:32:01] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 8, in <module>
-    app = Flase(__name__)
-NameError: name 'Flase' is not defined
-127.0.0.1 - - [28/Mar/2018 22:32:03] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:32:03] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:32:03] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:32:03] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:32:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:32:59] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 25, in index
-    index_html = article()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 12, in __init__
-    self.file_dir = os.getcwd() +'/files'
-NameError: name 'os' is not defined
-127.0.0.1 - - [28/Mar/2018 22:32:59] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:32:59] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:32:59] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:33:27] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 25, in index
-    index_html = article()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 13, in __init__
-    self.filename = os.dirlist(self.file_dir)
-AttributeError: module 'os' has no attribute 'dirlist'
-127.0.0.1 - - [28/Mar/2018 22:33:27] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:27] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:27] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:28] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:28] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:33:55] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 26, in index
-    index_html.get_json_content()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 18, in get_json_content
-    file = self.file_dir + '/' + self.filename
-TypeError: Can't convert 'list' object to str implicitly
-127.0.0.1 - - [28/Mar/2018 22:33:55] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:55] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:55] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:56] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:33:56] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:34:58] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 26, in index
-    index_html.get_json_content()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 20, in get_json_content
-    self._content_list[file] = json.loads(f.read())
-AttributeError: 'article' object has no attribute '_content_list'
-127.0.0.1 - - [28/Mar/2018 22:34:58] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:34:58] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:34:58] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:34:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:34:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:37:02] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 27, in index
-    index_html.get_json_content()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 21, in get_json_content
-    self._content_list[file] = json.loads(ff)
-AttributeError: 'article' object has no attribute '_content_list'
-127.0.0.1 - - [28/Mar/2018 22:37:03] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:37:03] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:37:03] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:37:03] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:37:03] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:38:26] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 27, in index
-    index_html.get_json_content()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 22, in get_json_content
-    return self._content_list
-AttributeError: 'article' object has no attribute '_content_list'
-127.0.0.1 - - [28/Mar/2018 22:38:26] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:38:26] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:38:26] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:38:26] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:38:27] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:39:05] "GET / HTTP/1.1" 500 -
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 07:57:08] "GET / HTTP/1.1" 500 -
 Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
     return self.wsgi_app(environ, start_response)
@@ -253,129 +21,12 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1725, in make_response
     raise ValueError('View function did not return a response')
 ValueError: View function did not return a response
-127.0.0.1 - - [28/Mar/2018 22:39:05] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:39:11] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:39:11] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:39:11] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:39:12] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:50:28] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 27, in index
-    index_html.get_json_content()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 22, in get_json_content
-    print(self._content_dict[i])
-KeyError: 'helloshiyanlou.json'
-127.0.0.1 - - [28/Mar/2018 22:50:29] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:50:29] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:50:29] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:50:29] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:50:29] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:54:10] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 27, in index
-    index_html.get_json_content()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 22, in get_json_content
-    print(self._content_dict(file))
-TypeError: 'dict' object is not callable
-127.0.0.1 - - [28/Mar/2018 22:54:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:54:10] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:54:10] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:54:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:54:11] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:55:54] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 28, in index
-    index_html.get_json_content()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 23, in get_json_content
-    print(self._content_dict(file))
-TypeError: 'dict' object is not callable
-127.0.0.1 - - [28/Mar/2018 22:55:54] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:55:54] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:55:54] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:55:55] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:55:55] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
-/home/shiyanlou/SYL/infomation_site/files/helloshiyanlou.json
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:58:01] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [29/Mar/2018 07:57:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 07:57:10] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 07:57:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 07:57:10] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 07:57:11] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:10:00] "GET / HTTP/1.1" 500 -
 Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
     return self.wsgi_app(environ, start_response)
@@ -394,213 +45,16 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1725, in make_response
     raise ValueError('View function did not return a response')
 ValueError: View function did not return a response
-127.0.0.1 - - [28/Mar/2018 22:58:01] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:58:01] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:58:01] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:58:02] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:58:02] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
-/home/shiyanlou/SYL/infomation_site/files/helloshiyanlou.json
-{'content': 'Welcome to shiyanlou.com \\n This is shiyanlou.com louplus demo page. \\n Please let us know if you have any questions \\n Thank you!', 'created_time': '2017-09-09 12:00:00', 'title': 'Hello, Shiyanlou!'}
-/home/shiyanlou/SYL/infomation_site/files/helloworld.json
-{'content': 'Hello world! \\\\n This is hello world demo page. \\\\n Please let us know if you have any questions \\\\n Thank you!', 'created_time': '2017-08-09 12:00:00', 'title': 'Hello, World!'}
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 22:59:45] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/cli.py", line 184, in __call__
-    self._flush_bg_loading_exception()
-  File "/usr/local/lib/python3.5/dist-packages/flask/cli.py", line 172, in _flush_bg_loading_exception
-    reraise(*exc_info)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/cli.py", line 161, in _load_app
-    self._load_unlocked()
-  File "/usr/local/lib/python3.5/dist-packages/flask/cli.py", line 176, in _load_unlocked
-    self._app = rv = self.loader()
-  File "/usr/local/lib/python3.5/dist-packages/flask/cli.py", line 237, in load_app
-    rv = locate_app(self.app_import_path)
-  File "/usr/local/lib/python3.5/dist-packages/flask/cli.py", line 90, in locate_app
-    __import__(module)
-File "/home/shiyanlou/SYL/infomation_site/app.py", line 22
-    content = self._content_dict[file])
-                                      ^
-SyntaxError: invalid syntax
-127.0.0.1 - - [28/Mar/2018 22:59:46] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:59:46] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:59:46] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:59:46] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 22:59:46] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:13] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
-    response = self.make_response(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1725, in make_response
-    raise ValueError('View function did not return a response')
-ValueError: View function did not return a response
-127.0.0.1 - - [28/Mar/2018 23:00:13] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:13] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:13] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:13] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:14] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:42] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
-    response = self.make_response(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1725, in make_response
-    raise ValueError('View function did not return a response')
-ValueError: View function did not return a response
-127.0.0.1 - - [28/Mar/2018 23:00:42] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:42] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:42] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:48] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:48] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:49] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
-    response = self.make_response(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1725, in make_response
-    raise ValueError('View function did not return a response')
-ValueError: View function did not return a response
-127.0.0.1 - - [28/Mar/2018 23:00:49] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:49] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:49] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:54] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:00:54] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
-{'title': 'Hello, Shiyanlou!', 'created_time': '2017-09-09 12:00:00', 'content': 'Welcome to shiyanlou.com \\n This is shiyanlou.com louplus demo page. \\n Please let us know if you have any questions \\n Thank you!'}
-{'title': 'Hello, World!', 'created_time': '2017-08-09 12:00:00', 'content': 'Hello world! \\\\n This is hello world demo page. \\\\n Please let us know if you have any questions \\\\n Thank you!'}
-{'title': 'Hello, Shiyanlou!', 'created_time': '2017-09-09 12:00:00', 'content': 'Welcome to shiyanlou.com \\n This is shiyanlou.com louplus demo page. \\n Please let us know if you have any questions \\n Thank you!'}
-{'title': 'Hello, World!', 'created_time': '2017-08-09 12:00:00', 'content': 'Hello world! \\\\n This is hello world demo page. \\\\n Please let us know if you have any questions \\\\n Thank you!'}
-{'title': 'Hello, Shiyanlou!', 'created_time': '2017-09-09 12:00:00', 'content': 'Welcome to shiyanlou.com \\n This is shiyanlou.com louplus demo page. \\n Please let us know if you have any questions \\n Thank you!'}
-{'title': 'Hello, World!', 'created_time': '2017-08-09 12:00:00', 'content': 'Hello world! \\\\n This is hello world demo page. \\\\n Please let us know if you have any questions \\\\n Thank you!'}
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 23:01:56] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 28, in index
-    index_html.get_json_content()
-  File "/home/shiyanlou/SYL/infomation_site/app.py", line 22, in get_json_content
-    content = self._content_dict(file)
-TypeError: 'dict' object is not callable
-127.0.0.1 - - [28/Mar/2018 23:01:56] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:01:56] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:01:56] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:01:57] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:01:57] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:10:00] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:10:00] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:10:00] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:10:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:10:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
  * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 23:02:42] "GET / HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
-    response = self.handle_exception(e)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
-    response = self.make_response(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1725, in make_response
-    raise ValueError('View function did not return a response')
-ValueError: View function did not return a response
-127.0.0.1 - - [28/Mar/2018 23:02:42] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:02:42] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:02:43] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:02:43] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:02:43] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
-<class 'dict'>
-<class 'dict'>
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
- * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 23:11:34] "GET / HTTP/1.1" 500 -
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 08:15:45] "GET / HTTP/1.1" 500 -
 Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
     return self.wsgi_app(environ, start_response)
@@ -625,18 +79,120 @@ Traceback (most recent call last):
   File "/home/shiyanlou/SYL/infomation_site/app.py", line 30, in index
     index_html.get_json_content()
   File "/home/shiyanlou/SYL/infomation_site/app.py", line 21, in get_json_content
-    self.content_dict[file] = json.loads(ff)
-AttributeError: 'article' object has no attribute 'content_dict'
-127.0.0.1 - - [28/Mar/2018 23:11:34] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:11:34] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:11:34] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:11:35] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:11:35] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+    content_dict[file] = json.load(ff)
+  File "/usr/lib/python3.5/json/__init__.py", line 265, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+127.0.0.1 - - [29/Mar/2018 08:15:45] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:15:45] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:15:45] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:15:45] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:15:46] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
  * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 23:11:54] "GET / HTTP/1.1" 500 -
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 08:26:13] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shiyanlou/SYL/infomation_site/app.py", line 30, in index
+    return index_html.get_json_content()
+  File "/home/shiyanlou/SYL/infomation_site/app.py", line 21, in get_json_content
+    content_dict[file] = json.load(ff)
+  File "/usr/lib/python3.5/json/__init__.py", line 265, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+127.0.0.1 - - [29/Mar/2018 08:26:13] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:26:13] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:26:13] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:26:13] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:26:14] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 08:26:27] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 08:26:27] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:26:27] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:26:27] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:26:32] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:26:32] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:31:06] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 08:31:06] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:31:06] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:31:06] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:31:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:31:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 08:31:55] "GET / HTTP/1.1" 500 -
 Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
     return self.wsgi_app(environ, start_response)
@@ -655,16 +211,17 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1725, in make_response
     raise ValueError('View function did not return a response')
 ValueError: View function did not return a response
-127.0.0.1 - - [28/Mar/2018 23:11:54] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:11:54] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:11:54] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:11:54] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:11:55] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:31:55] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:31:55] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:31:55] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:32:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:32:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
  * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+{'/home/shiyanlou/SYL/infomation_site/files/helloshiyanlou.json': {'created_time': '2017-09-09 12:00:00', 'title': 'Hello, Shiyanlou!', 'content': 'Welcome to shiyanlou.com \\n This is shiyanlou.com louplus demo page. \\n Please let us know if you have any questions \\n Thank you!'}, '/home/shiyanlou/SYL/infomation_site/files/helloworld.json': {'created_time': '2017-08-09 12:00:00', 'title': 'Hello, World!', 'content': 'Hello world! \\\\n This is hello world demo page. \\\\n Please let us know if you have any questions \\\\n Thank you!'}}
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 302-556-150
-127.0.0.1 - - [28/Mar/2018 23:21:45] "GET / HTTP/1.1" 500 -
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 08:32:34] "GET / HTTP/1.1" 500 -
 Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
     return self.wsgi_app(environ, start_response)
@@ -680,11 +237,224 @@ Traceback (most recent call last):
     return self.finalize_request(rv)
   File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
     response = self.make_response(rv)
-  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1725, in make_response
-    raise ValueError('View function did not return a response')
-ValueError: View function did not return a response
-127.0.0.1 - - [28/Mar/2018 23:21:45] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:21:45] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:21:46] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:21:46] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [28/Mar/2018 23:21:46] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 08:32:34] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:32:34] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:32:34] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:32:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:32:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 08:35:04] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 08:35:04] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:35:04] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:35:04] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:35:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:35:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 08:51:10] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 08:51:11] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:51:11] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:51:11] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:51:11] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:51:11] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 08:52:10] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 08:52:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:52:10] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:52:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:52:10] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 08:52:10] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 09:15:06] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 09:15:06] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:15:06] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:15:06] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:15:06] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:15:06] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:17:45] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 09:17:45] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:17:45] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:17:45] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:17:45] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:17:45] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:20:29] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+127.0.0.1 - - [29/Mar/2018 09:20:29] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:20:29] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:20:29] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:20:29] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:20:30] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-275-535
+127.0.0.1 - - [29/Mar/2018 09:21:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2018 09:21:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [29/Mar/2018 09:21:43] "GET /favicon.ico HTTP/1.1" 404 -

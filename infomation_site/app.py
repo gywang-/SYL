@@ -18,17 +18,17 @@ class article(object):
             file = self.file_dir + '/' + i
             with open(file,'r') as f:
                 ff = f.read()
-                content_dict[file] = json.loads(ff)
-        print(content_dict)
-
+                bb = json.dumps(ff)
+                content_dict[i] = json.loads(bb)
+        return content_dict
         
 
 
 @app.route('/')  
 def index():
     index_html = article()
-    index_html.get_json_content()
+    contents = index_html.get_json_content()
+    return str(contents)
 
 if __name__ == '__main__':
     app.run()
-

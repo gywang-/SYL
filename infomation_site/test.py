@@ -11,10 +11,15 @@ class article(object):
             file = self.file_dir + '/' + i
             with open(file,'r') as f:
                 ff = f.read()
-                content_dict[file] = json.loads(ff)
-        print(content_dict)
+                bb = json.dumps(ff)
+#                print(type(bb))
+                content_dict[i] = json.loads(bb)
+#        print(content_dict)
+#        print(type(content_dict))
+        return content_dict
 
 
 test = article()
 
-test.get_json_content()
+a = test.get_json_content()
+print(a)
