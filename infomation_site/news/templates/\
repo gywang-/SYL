@@ -9,7 +9,7 @@
             </head>
         {% endblock %}
     </div>
-    <div> {% block contend %} {% endblock %}</div>
+    <div> {% block contends %} {% endblock %}</div>
     <div id="footer">
         {% block footer %}
         &copy; Copyright 2018 by <a href="http://www.geeklive.cn/">极客生活</a>

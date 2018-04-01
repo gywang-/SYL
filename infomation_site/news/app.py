@@ -25,12 +25,15 @@ class article(object):
         a = self.get_json_content()
         return [ item['title'] for item in a.values() ]
 
-#file = article()
+files=article()
 
 @app.route('/')
 def index():
-    index_html = article()
-    return render_template('index.html',titles = index_html.get_title())
+    a = files.get_json_content()
+    titles_dict = {}
+    for key, value in  a.items():
+        titles_dict[key] = value['title']
+    return render_template('index.html',titles_keys = titles_dict.keys(), titles = titles_dict )
 
 @app.route('/files/<filename>')
 def file(filename):
@@ -39,13 +42,14 @@ def file(filename):
     if filename not in key_list.keys():
         abort(404)
     else:
-        return render_template('file.html',file = files.get_json_content()[filename])
-    
 #        a = files.get_json_content()
 #        for key, value in a.items():
-#            b = a[filename]
-#            return render_template('file.html', url_name = key, value_name = value['tit    le'])
-
+#            if filename in 
+#            url_name.append(key)
+#            titles_list.append(value['title'])
+#        return render_template('index.html',titles = titles_list)
+        return render_template('file.html',file = files.get_json_content()[filename])
+    
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404

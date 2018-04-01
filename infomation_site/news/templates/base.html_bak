@@ -2,14 +2,17 @@
     <div>
         {% block header %}
             <!DOCTYPE html>
+            <p> test </p>
+            <!--
             <head>
             <!-- 指定编码 -->
                 <meta charset="utf-8">
-                <title> FLASK 学习 </title>
+                <title> FLASK 学习 <title>
             </head>
+            -->
         {% endblock %}
     </div>
-    <div> {% block contend %} {% endblock %}</div>
+    
     <div id="footer">
         {% block footer %}
         &copy; Copyright 2018 by <a href="http://www.geeklive.cn/">极客生活</a>
