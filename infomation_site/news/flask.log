@@ -3030,3 +3030,22 @@ SyntaxError: invalid syntax
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 258-572-018
+127.0.0.1 - - [01/Apr/2018 23:33:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2018 23:33:46] "GET /files/helloshiyanlou HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2018 23:33:46] "GET /files/helloworld HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2018 23:33:46] "GET /nothing HTTP/1.1" 404 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/news/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 258-572-018
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/news/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 258-572-018
+127.0.0.1 - - [01/Apr/2018 23:35:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2018 23:35:48] "GET /files/helloworld HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2018 23:35:55] "GET /files/helloshiyanlou HTTP/1.1" 200 -
+ * Detected change in '/home/shiyanlou/SYL/infomation_site/news/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 258-572-018

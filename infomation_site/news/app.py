@@ -20,10 +20,6 @@ class article(object):
             with open(fle) as f:
                 content_dict[i[:-5]] = json.load(f)
         return content_dict
-# 主页文章
-    def get_title(self):
-        a = self.get_json_content()
-        return [ item['title'] for item in a.values() ]
 
 files=article()
 
@@ -42,12 +38,6 @@ def file(filename):
     if filename not in key_list.keys():
         abort(404)
     else:
-#        a = files.get_json_content()
-#        for key, value in a.items():
-#            if filename in 
-#            url_name.append(key)
-#            titles_list.append(value['title'])
-#        return render_template('index.html',titles = titles_list)
         return render_template('file.html',file = files.get_json_content()[filename])
     
 @app.errorhandler(404)
